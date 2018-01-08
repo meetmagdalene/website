@@ -1,0 +1,20 @@
+<template name="BlogLayout">
+    <header>
+    <!-- Fixed navbar -->
+     {{> navbar}}
+
+     <div class="blog-header">
+        <div class="container">
+          <h1 class="blog-title">A Blog Title</h1>
+          <p class="lead blog-description">A Blog Tagline</p>
+        </div>
+      </div>
+   </header>
+
+   <!-- Begin page content -->
+   <main role="main" class="container">
+     {{> yield}}
+   </main>
+
+   {{> footer}}
+</template>
